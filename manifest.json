@@ -3,7 +3,7 @@
     "description": "Appends the highlighted text to the link and opens it in new tab",
     "version": "0.1",
     "manifest_version": 3,
-
+    "permissions": ["storage"],
     "action": {
         "default_popup": "popup.html"
     },
