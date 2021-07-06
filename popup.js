@@ -1,4 +1,6 @@
 const saveButton = document.getElementById("button");
-saveButton.addEventListener("click", () => {
-    console.log('hi');
+const link = document.getElementById("link");
+
+saveButton.addEventListener("click", (link) => {
+    chrome.storage.sync.set({ link });
 })
