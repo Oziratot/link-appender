@@ -3,6 +3,7 @@
     "description": "Appends the highlighted text to the link and opens it in new tab",
     "version": "0.1",
     "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
     "background": {
       "service_worker": "background.js"
     },
