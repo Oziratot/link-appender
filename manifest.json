@@ -2,17 +2,13 @@
     "name": "Link Appender",
     "description": "Appends the highlighted text to the link and opens it in new tab",
     "version": "0.1",
-    "manifest_version": 3,
-    "permissions": ["activeTab", "scripting"],
+    "manifest_version": 2,
+    "permissions": ["activeTab"],
     "background": {
-      "service_worker": "background.js"
+      "scripts": ["background.js"],
+      "persistent": false
     },
-    "commands": {
-      "inject-script": {
-        "suggested_key": "Ctrl+Shift+X",
-        "description": "Inject a script on the page"
-      }
-    },
+    "browser_action": {},
     "icons": {
         "16": "./icons/appender-16.png",
         "32": "./icons/appender-32.png",
